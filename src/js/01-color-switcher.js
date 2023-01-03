@@ -11,14 +11,18 @@ let timerId = null;
 
 startBtn.addEventListener('click', () => {
   onClickStartBtn();
-  startBtn.setAttribute('disabled');
-  stopBtn.removeAttribute('disabled');
+//   startBtn.setAttribute('disabled');
+//   stopBtn.removeAttribute('disabled');
+  startBtn.disabled = true;
+  stopBtn.disabled = false;
 });
 
 stopBtn.addEventListener('click', () => {
   onClickStopBtn();
-  startBtn.removeAttribute('disabled');
-  stopBtn.setAttribute('disabled');
+//   startBtn.removeAttribute('disabled');
+//   stopBtn.setAttribute('disabled');
+  startBtn.disabled = false;
+  stopBtn.disabled = true;
 });
 
 function onClickStartBtn() {
