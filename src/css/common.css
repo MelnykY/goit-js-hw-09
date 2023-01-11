@@ -16,3 +16,101 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* .body--countdown-page {
+
+  background-color: #ffd54f;
+  display: flex; 
+}*/
+
+.container {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+}
+
+.field {
+  width: 20rem;
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  margin-top: 300px;
+}
+
+.field span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.field:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.input-countdown {
+  width: 15rem;
+  border: 0;
+  border-bottom: 2px solid #3c4fe0b8;
+  outline: 2;
+  font-size: 1.3rem;
+  color: #333;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  text-align: center;
+}
+
+.input-countdown:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+  border: none;
+}
+
+.btn-countdown {
+  align-items: center;
+  appearance: none;
+  margin-left: 20px;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #1f35dfa2 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.btn-countdown:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.btn-countdown:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn-countdown:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
