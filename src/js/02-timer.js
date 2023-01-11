@@ -8,8 +8,12 @@ const days = document.querySelector('span[data-days]');
 const hours = document.querySelector('span[data-hours]');
 const minutes = document.querySelector('span[data-minutes]');
 const seconds = document.querySelector('span[data-seconds]');
-const bgChange = document.querySelector('body');
+// const bgChange = document.querySelector('body');
 //const bgChange = document.querySelector('.body--countdown-page');
+
+// bgChange.style.backgroundImage = url(
+//   'https://cdn.lifehacker.ru/wp-content/uploads/2018/06/winXPwin7_1527919170.jpg'
+// );
 
 startBtn.disabled = true;
 let userDate = null;
@@ -72,8 +76,9 @@ class Timer {
         hours.textContent = '00';
         minutes.textContent = '00';
         seconds.textContent = '00';
-       
-
+        document.body.style.backgroundImage =
+          "url('https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Teaser/bluescreen-t.jpg')";
+        document.body.style.backgroundSize = '100%';
         this.stop();
       }
     }, 1000);
@@ -81,16 +86,11 @@ class Timer {
 
   stop() {
     clearInterval(this.intervalId);
-    //  bgChange.style.backgroundImage = url(
-    //    'https://cdn.lifehacker.ru/wp-content/uploads/2018/06/winXPwin7_1527919170.jpg'
-    //  );
-
   }
 }
 
 startBtn.addEventListener('click', () => {
   timer.start();
-  
 });
 
 const timer = new Timer();

@@ -17,11 +17,10 @@ img {
   max-width: 100%;
 }
 
-/* .body--countdown-page {
-
-  background-color: #ffd54f;
-  display: flex; 
-}*/
+.body--countdown-page {
+  background-color: #bfefff89;
+  /* display: flex;  */
+}
 
 .container {
   color: #333;
